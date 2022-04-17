@@ -10,9 +10,30 @@ Challenges Encountered: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 import sys
 import argparse
 
+
 class User:
-    
+    pass
+
 class Book:
+    """A class to represent a Book object.
+    
+    Attributes:
+        title (string): The title of a book.
+        author (string): The author of a book.
+        genre (tuple of strings): A tuple containing the different genres of a book.
+        avg_rating (float): The avg_rating for a book based on goodreads reviews.
+        length (string): The length of a book either being 'short' or 'long' based on page count.
+    """
+    def __init__(self, title, author, genre, avg_rating, length):
+        """Initializes a Book object.
+        
+        Args:
+            title (string): See class documentation.
+            author (string): See class documentation.
+            genre (tuple of strings): See class documentation.
+            avg_rating (float): See class documentation.
+            length (string): See class documentation.
+        """
 
 def main(parameter1, parameter2):
     #Note that this function does not do anything.
