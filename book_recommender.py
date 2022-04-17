@@ -35,10 +35,10 @@ class Recommender:
     """A class for holding responses from the user about their book preferences.
     
         Attributes:
-            preferred_author (String):
-            preferred_genre (String):
-            preferred_rating (float):
-            preferred_length (String):
+            preferred_author (String): User response to preferred author question
+            preferred_genre (String): User response from terminal about their favorite genres
+            preferred_rating (float): User response from terminal about their preferred rating (1 - 5)
+            preferred_length (String): User response from terminal about preferred length of a book (short or long)
     """
 
 def main(parameter1, parameter2):
