@@ -32,6 +32,31 @@ class Book:
         """
         
 class Recommender:
+    
+    def __init__(self,book, user_author, user_genre,user_rating,user_length):
+        #this is supposed to pass in the attribute from the book class to the recommendation class
+        rating_scale = 
+        self.book = book
+        self.user_author = user_author
+        self.user_genre = ()
+        self.user_length = ()
+        self.user_rating =
+
+
+    def recommendation(self):
+        #This is supposed to append the list of books given to the users based on their preferences
+        for book in book_list:
+            if book.author == user_author:
+                recommendation.append(book)
+        for book in book_list:
+            if book.genre == user_genre:
+                recommendation.append(book)
+        for book in book_list:
+            if book.rating == user_rating:
+                recommendation.append(book)
+        for book in book_list:
+            if book.length == user_length:
+                recommendation.append(book)
     """A class for holding responses from the user about their book preferences.
     
         Attributes:
