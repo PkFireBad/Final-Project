@@ -22,6 +22,7 @@ class Book:
         length (string): The length of a book either being 'short' or 'long' based on page count.
     """
     def __init__(self, title, author, genre, avg_rating, length):
+        pass
         """Initializes a Book object.
         
         Args:
@@ -31,6 +32,14 @@ class Book:
             avg_rating (float): See class documentation.
             length (string): See class documentation.
         """
+        
+    def books():
+        #This function is to read the csv file and be added to a list based on selected elements
+        f = open('books.csv')
+        csv_f =csv.reader.(f)
+        books = []
+
+        f.close()
         
 class Recommender:
     
