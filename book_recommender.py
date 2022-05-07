@@ -10,7 +10,7 @@ Challenges Encountered: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 import sys
 import argparse
 import csv
-
+import pandas as pd
 """ A class for holding responses from the user about their book preferences.
         Attributes:
             preferred_author (String): User response to preferred author question
@@ -18,6 +18,10 @@ import csv
             preferred_rating (float): User response from terminal about their preferred rating (1 - 5)
             preferred_length (String): User response from terminal about preferred length of a book (short or long) 
 """
+books_df = pd.read_csv("books.csv")
+
+print(books_df)
+
 class Recommender:
     def __init__(self):
         self.book_list = {"Harry Potter and the Half-Blood Prince (Harry Potter  #6)": ["J.K. Rowling/Mary GrandPré", "4.57", "652", "Scholastic Inc."],
